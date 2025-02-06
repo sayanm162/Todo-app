@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+
+@layer utilities {
+  /* Minimal Scrollbar Styling */
+  .scrollbar-thin {
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: rgba(209, 213, 219, 0.5) transparent; /* Optional: thumb and track color in standard CSS */
+    -webkit-overflow-scrolling: touch; /* Add momentum-based scrolling for touch devices */
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px; /* Thin scrollbar for WebKit */
+    height: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background-color: transparent; /* Make the track transparent */
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: rgba(156, 163, 175, 0.5); /* Muted gray color for the thumb */
+    border-radius: 3px; /* Slightly rounded corners for thumb */
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(107, 114, 128, 0.7); /* Darker gray on hover */
+  }
+}

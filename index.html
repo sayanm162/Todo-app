@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-[#2A3C24] font-mono p-4">
+    <div class="h-screen w-full flex justify-center items-center ">
+        <div class="bg-[#a8804c] w-[90%] sm:w-[60%] md:w-[55%] lg:w-[45%] xl:w-[35%] h-auto min-h-[27%] rounded-md text-[#ffffb3] p-6 space-y-4 shadow-lg">
+            <h1 class="text-2xl md:text-3xl font-bold text-center font-sans">Todo List!</h1>
+            <p class="flex items-center justify-center gap-x-3">
+                Get started by adding your tasks!
+                <img src="assets/rocket.png" alt="Get started" class="w-6 h-6"/>
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 w-full">
+                <input
+                    type="text"
+                    id="todo-input"
+                    placeholder="Enter Task:"
+                    class="bg-[#774e24] text-[#ffffb3] py-2 px-3 rounded-lg sm:w-[70%]  focus:outline-none focus:ring-2 focus:ring-[#ffffb3] shadow-md appearance-none"
+                >
+                <button
+                    type="button"
+                    class="py-2 px-4 w-full sm:w-[30%] rounded-lg shadow-md bg-[#472d30] hover:bg-[#252234] transition-colors duration-200 appearance-none"
+                    id="add-button"
+                >
+                    Add Task
+                </button>
+            </div>
+            <div id="list-section" class="max-h-[300px] overflow-y-auto  flex flex-col gap-2 scrollbar-thin">
+            </div>
+            <div class="w-full text-right text-black text-sm">
+            Developer: Sayan Mitra
+            </div>
+            <div class="p-4 text-sm">
+                <h3>Instructions:</h3>
+                <ol class="list-disc">
+                    <li>Add your Task</li>
+                    <li>Tap a task to mark it completed</li>
+                    <li>Tap again to reverse it</li>
+                    <li>Tap delete to delete a task</li>
+                    <span class=" text-black font-thin">All data gets stored in Local Device. </span>
+                </ol>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="src/todo2.js"></script>
+</body>
+</html>
